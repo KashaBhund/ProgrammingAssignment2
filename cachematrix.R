@@ -5,6 +5,7 @@
 
 
 ## Given a square matrix as input, inverts the matrix using "solve" and saves it as m
+## returns a list of four functions set, get, setmatrix, getmatrix
 makeCacheMatrix <- function(x = matrix()) {
          m <-NULL                  #initialize m as null, will hold the cached value
          set <- function(y){       #store the matrix
@@ -20,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Returns a cached inverse matrix if it already exists from makeCacheMatrix, else creates it using "solve"
+## Returns a cached inverse matrix if it already exists from makeCacheMatrix, else creates it. 
 
 cacheSolve <- function(x, ...) {
        
